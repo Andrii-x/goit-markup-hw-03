@@ -111,6 +111,7 @@ img { display: block; max-width: 100%; height: auto; }
 .hero {
   background-color: #2e2f42;
   text-align: center;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -119,9 +120,17 @@ img { display: block; max-width: 100%; height: auto; }
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  max-width: 496px;
+  margin: 0 auto 48px;
 }
 
-.hero button {
+.hero-btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  margin: 0 auto;
+
   background-color: #4d5ae5;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -129,18 +138,6 @@ img { display: block; max-width: 100%; height: auto; }
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
-  cursor: pointer;
-  border: none;
-}
-
-.hero-btn {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  background-color: #404bbf;
   cursor: pointer;
   border: none;
 }
@@ -223,8 +220,6 @@ img { display: block; max-width: 100%; height: auto; }
   justify-content: center;
 }
 
-
-
 .portfolio-title {
   font-weight: 500;
   font-size: 20px;
@@ -250,7 +245,23 @@ img { display: block; max-width: 100%; height: auto; }
 /* ===== Футер ===== */
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  text-decoration: none;
+
+  display: inline-block; /* ✅ дає блочні властивості */
+  margin-bottom: 16px; /* ✅ відступ між логотипом і текстом */
+}
+
 
 .footer-text {
   line-height: 1.5;
