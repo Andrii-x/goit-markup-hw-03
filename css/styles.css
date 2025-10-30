@@ -42,6 +42,24 @@ ul {
   list-style: none;
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+}
+ul { list-style: none; }
+img { display: block; max-width: 100%; height: auto; }
+
+
 /* ===== Контакти ===== */
 .contacts {
   font-style: normal;
@@ -61,6 +79,33 @@ ul {
 .contacts a[href^="tel"]:focus {
   color: #404bbf;
 }
+
+.contacts {
+  font-style: normal;
+}
+
+.contact-list {
+  display: flex;
+  gap: 40px;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 /* ===== Герой (перша секція) ===== */
 .hero {
@@ -134,6 +179,11 @@ ul {
   color: #434455;
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 /* ===== Команда ===== */
 .team {
   background-color: #f4f4fd;
@@ -191,6 +241,12 @@ ul {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
+.portfolio-item {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
 /* ===== Футер ===== */
 .footer {
   background-color: #2e2f42;
