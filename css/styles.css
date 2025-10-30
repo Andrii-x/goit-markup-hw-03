@@ -19,6 +19,11 @@ body {
   text-decoration: none;
 }
 
+.logo  {
+  margin-right: 76px;
+  padding: 24px 0;
+}
+
 .logo-span,
 .footer-logo-span {
   color: #2e2f42;
@@ -151,8 +156,24 @@ img { display: block; max-width: 100%; height: auto; }
 /* ===== Секція переваг ===== */
 .advantages {
   background-color: #ffffff;
+  padding: 120px 0; /* 🔹 Відступи всередині секції */
 }
 
+/* 🔹 Список у секції */
+.adv-list {
+  display: flex; /* Розміщення елементів у рядок */
+  gap: 24px;     /* Відстань між елементами списку */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 🔹 Кожен пункт списку */
+.adv-item {
+  width: calc((100% - 72px) / 4); /* 4 елементи з проміжками по 24px */
+}
+
+/* 🔹 Заголовок секції */
 .section-title {
   font-size: 36px;
   line-height: 1.11;
@@ -162,19 +183,24 @@ img { display: block; max-width: 100%; height: auto; }
   color: #2e2f42;
 }
 
+/* 🔹 Заголовки всередині пунктів списку */
 .adv-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px; /* 🔹 Відступ між заголовком і текстом */
 }
 
+/* 🔹 Текст усередині пунктів списку */
 .adv-text {
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
+
 
 .section {
   padding-top: 120px;
