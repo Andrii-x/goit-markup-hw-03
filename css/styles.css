@@ -196,12 +196,13 @@ img { display: block; max-width: 100%; height: auto; }
 
 /* list layout */
 .adv-list {
-  display: flex;         /* горизонтальний ряд */
-  gap: 24px;             /* відступи між елементами */
+  display: flex;
+  gap: 24px;
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 
 /* each item width for 4 per row */
 .adv-item {
