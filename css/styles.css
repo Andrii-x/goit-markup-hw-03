@@ -193,8 +193,6 @@ img { display: block; max-width: 100%; height: auto; }
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-/* list layout */
 .adv-item {
   margin-right: 24px;
 }
@@ -202,13 +200,15 @@ img { display: block; max-width: 100%; height: auto; }
 .adv-item:last-child {
   margin-right: 0;
 }
-.adv-list {
-  display: flex;     /* Розташовує всі <li> у ряд */
-  gap: 24px;         /* Автоматично додає 24px відступ між кожним <li> */
-  list-style: none;  /* Прибирає маркери */
-  padding: 0;        /* Скидає внутрішній відступ */
-  margin: 0;         /* Скидає зовнішній відступ */
+
+.adv-item {
+  margin-right: 24px;
 }
+
+.adv-item:last-child {
+  margin-right: 0;
+}
+
 
 
 /* each item width for 4 per row */
