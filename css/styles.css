@@ -172,18 +172,14 @@ img { display: block; max-width: 100%; height: auto; }
   padding: 120px 0; /* Відступи всередині секції */
 }
 
-.adv-list {
-  display: flex; /* Розміщення елементів у рядок */
-  gap: 24px;     /* Відстань між елементами списку */
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* ===== Контейнер ===== */
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px; /* Щоб контент не приликав до країв */
 }
 
-.adv-item {
-  width: calc((100% - 72px) / 4); /* 4 елементи з проміжками по 24px */
-}
-
+/* ===== Прихований заголовок ===== */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -197,26 +193,31 @@ img { display: block; max-width: 100%; height: auto; }
   overflow: hidden;
 }
 
-/* Заголовки */
+/* ===== Список ===== */
+.adv-list {
+  display: flex;
+  gap: 24px; /* Відстань між пунктами списку */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ===== Пункт списку ===== */
+.adv-item {
+  width: calc((100% - 72px) / 4); /* Розрахунок ширини пункту */
+}
+
+/* ===== Заголовок у пункті ===== */
 .adv-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-bottom: 8px;
+  margin-bottom: 8px; /* Відступ до тексту */
 }
 
-/* Текст */
-.adv-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-
-
-/* 🔹 Текст усередині пунктів списку */
+/* ===== Текст у пункті ===== */
 .adv-text {
   font-size: 16px;
   line-height: 1.5;
