@@ -33,6 +33,9 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-decoration: none;
+  padding: 24px 0; /* ✅ вертикальні відступи всередині посилання */
+  display: block; /* щоб padding застосувався коректно по всій висоті */
+  text-decoration: none
 }
 
 .nav-link:hover,
@@ -233,40 +236,46 @@ img { display: block; max-width: 100%; height: auto; }
   color: #2e2f42;
   margin-bottom: 72px;
 }
+.team {
+  background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
 .team-list {
-  display: flex;
-  gap: 24px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  display: flex; /* 🔹 розташовує елементи в ряд */
+  flex-wrap: wrap; /* 🔹 щоб переносились при вузькому екрані */
+  column-gap: 24px; /* 🔹 горизонтальні відступи */
+  row-gap: 48px; /* 🔹 вертикальні відступи */
+  justify-content: center;
 }
 
 .team-item {
   background-color: #ffffff;
-  border-radius: 0 0 4px 4px;
-  width: calc((100% - 72px) / 4);
+  border-radius: 0 0 4px 4px; /* 🔹 заокруглення нижніх кутів */
+  width: calc((100% - 72px) / 4); /* 🔹 4 елементи, 3 проміжки по 24px */
+  text-align: center;
 }
+
 .team-content {
   padding: 32px 0;
 }
 
 .team-name {
-  text-align: center;
-  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .team-role {
-  text-align: center;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
+
 
 .portfolio {
   padding: 120px 0;
