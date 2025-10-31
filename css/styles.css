@@ -167,19 +167,20 @@ img { display: block; max-width: 100%; height: auto; }
 }
 
 /* ===== Секція переваг ===== */
+/* ===== Advantages section ===== */
 .advantages {
   background-color: #ffffff;
-  padding: 120px 0; /* Відступи всередині секції */
+  padding: 120px 0; /* відступи зверху/знизу секції */
 }
 
-/* ===== Контейнер ===== */
+/* container (повинен бути в проекті глобально) */
 .container {
   width: 1158px;
   margin: 0 auto;
-  padding: 0 15px; /* Щоб контент не приликав до країв */
+  padding: 0 15px;
 }
 
-/* ===== Прихований заголовок ===== */
+/* visually hidden pattern */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -193,37 +194,40 @@ img { display: block; max-width: 100%; height: auto; }
   overflow: hidden;
 }
 
-/* ===== Список ===== */
+/* list layout */
 .adv-list {
-  display: flex;
-  gap: 24px; /* Відстань між пунктами списку */
+  display: flex;         /* горизонтальний ряд */
+  gap: 24px;             /* відступи між елементами */
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* ===== Пункт списку ===== */
+/* each item width for 4 per row */
 .adv-item {
-  width: calc((100% - 72px) / 4); /* Розрахунок ширини пункту */
+  box-sizing: border-box; /* безпечний варіант — важливо для padding/width */
+  width: calc((100% - 72px) / 4); /* 4 items, 3 gaps of 24px => 72px */
 }
 
-/* ===== Заголовок у пункті ===== */
+/* title and text */
 .adv-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-bottom: 8px; /* Відступ до тексту */
+  margin-bottom: 8px; /* відступ до параграфа */
+  text-align: left; /* або center — за макетом; в вимогах не вказано, тому left/center можна змінити */
 }
 
-/* ===== Текст у пункті ===== */
 .adv-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin: 0;
 }
+
 
 
 .section {
