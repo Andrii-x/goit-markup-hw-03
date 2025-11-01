@@ -193,22 +193,14 @@ img { display: block; max-width: 100%; height: auto; }
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.adv-item {
-  margin-right: 24px;
-}
 
-.adv-item:last-child {
-  margin-right: 0;
-}
-
-.adv-item {
-  margin-right: 24px;
-}
-
-.adv-item:last-child {
-  margin-right: 0;
-}
-
+.adv-list {
+  display: flex;
+  gap: 24px; /* 🔹 відступи між елементами */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}git 
 
 
 /* each item width for 4 per row */
