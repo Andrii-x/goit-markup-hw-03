@@ -195,19 +195,18 @@ img { display: block; max-width: 100%; height: auto; }
 }
 
 .adv-list {
-  display: flex;
-  gap: 24px; /* 🔹 відступи між елементами */
+  display: flex;      /* 🔹 Розміщення елементів у рядок */
+  gap: 24px;          /* 🔹 Відстань між елементами списку */
   list-style: none;
-  margin: 0;
   padding: 0;
-}git 
-
-
-/* each item width for 4 per row */
-.adv-item {
-  box-sizing: border-box; /* безпечний варіант — важливо для padding/width */
-  width: calc((100% - 72px) / 4); /* 4 items, 3 gaps of 24px => 72px */
+  margin: 0;
 }
+
+.adv-item {
+  flex-basis: calc((100% - 72px) / 4); /* 🔹 або width — теж правильно */
+  box-sizing: border-box;
+}
+
 
 /* title and text */
 .adv-title {
