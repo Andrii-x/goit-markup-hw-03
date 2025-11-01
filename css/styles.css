@@ -203,8 +203,7 @@ img { display: block; max-width: 100%; height: auto; }
 }
 
 .adv-item {
-  flex-basis: calc((100% - 72px) / 4); /* 🔹 або width — теж правильно */
-  box-sizing: border-box;
+  width: calc((100% - 72px) / 4);
 }
 
 
