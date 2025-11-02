@@ -91,7 +91,7 @@ img { display: block; max-width: 100%; height: auto; }
 
 .contact-list {
   display: flex;
-  margin-right: 24px
+  margin-right: 40px
 }
 
 /* ===== CONTAINER ===== */
@@ -196,7 +196,7 @@ img { display: block; max-width: 100%; height: auto; }
 
 .adv-list {
   display: flex;      /* 🔹 Розміщення елементів у рядок */
-  margin-right: 24px;         /* 🔹 Відстань між елементами списку */
+  margin-right: 40px;         /* 🔹 Відстань між елементами списку */
   padding: 0;
   margin: 0;
 }
