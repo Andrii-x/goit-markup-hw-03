@@ -54,7 +54,7 @@ ul {
 
 .nav-list {
   display: flex;
-  margin-right: 24px
+  gap: 40px;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul {
@@ -166,8 +166,6 @@ img { display: block; max-width: 100%; height: auto; }
   overflow: hidden;
 }
 
-/* ===== Секція переваг ===== */
-/* ===== Advantages section ===== */
 .advantages {
   background-color: #ffffff;
   padding: 120px 0; /* відступи зверху/знизу секції */
@@ -196,16 +194,11 @@ img { display: block; max-width: 100%; height: auto; }
 
 .adv-list {
   display: flex;      /* 🔹 Розміщення елементів у рядок */
-  margin-right: 40px;         /* 🔹 Відстань між елементами списку */
+  gap: 24px 40px;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
-
-.adv-item {
-  width: calc((100% - 72px) / 4);
-}
-
-
 /* title and text */
 .adv-title {
   font-weight: 500;
